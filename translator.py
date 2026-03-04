@@ -55,7 +55,7 @@ class Translator:
         if n==0:
             return self.handleTranslate(query)
         elif n==1:
-            return self.handleWildCard(query)
+            return self.dizionario.translateWordWildCard(query)
         else: return False
 
     def _test_modulo(self):
